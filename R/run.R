@@ -1,0 +1,23 @@
+## Load packages
+library(data.table)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(DT)
+library(tidyr)
+library(corrplot)
+library(leaflet)
+library(lubridate)
+library(ggthemes)
+library(scales)
+library(h2o)
+library(tibble)
+library(gridExtra)
+library(zipcode)
+
+## Run scripts
+source("./data_import.R")
+source("./feature_engineering.R")
+#source("./eda")
+source("./model.R")
+source("./evalulation.R")
