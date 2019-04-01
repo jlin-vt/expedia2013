@@ -69,10 +69,9 @@ Note:
 `ggplot2`, `dplyr`, `lubridate`, `rjson`, `h2o`.
 
 ### Documentation
-See [my blog post](https://jeffrey-j-lin.github.io/2015/11/learning-personalized-hotel-searches-2/) for detailed description.
+See [my blog post](https://jllin90.github.io/posts/learning-personalized-hotel-searches-2/) for detailed description.
 
 ## Reference
-- [Combination of Diverse Ranking Models for
-Personalized Expedia Hotel Searches](https://arxiv.org/pdf/1311.7679v1.pdf)
+- [Combination of Diverse Ranking Models for Personalized Expedia Hotel Searches](https://arxiv.org/pdf/1311.7679v1.pdf)
 - [Expedia Recommendation System](https://github.com/shawnhero/ICDM2013-Expedia-Recommendation-System)
 - [Information Retrieval - Stanford University](https://web.stanford.edu/class/cs276/handouts/EvaluationNew-handout-6-per.pdf)
