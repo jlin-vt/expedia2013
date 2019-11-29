@@ -1,7 +1,0 @@
-{
-    "model_path_book":      "../../saved_model/book_model.rda",
-    "model_path_click":      "../../saved_model/click_model.rda",
-    "submission_path": "../../results/submission.csv",
-    "train_path":      "../../data/train.csv",
-    "test_path":       "../../data/test.csv"
-}

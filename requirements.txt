@@ -1,0 +1,6 @@
+matplotlib==2.0.2
+missingno==0.3.7
+numpy==1.13.3
+pandas==0.20.3
+seaborn==0.7.1
+scikit-learn==0.19.0
