@@ -20,6 +20,12 @@ Models are evaluated with [nDCG (normalized Discounted Cumulative Gain)](https:/
 ### Result
 The final submission was a mean ensemble of 35 best leaderboard submissions. The demo is able to score 0.51 nDCG on validation set, which is good enough to get top 10  out of 337 entries.
 
+## Installation
+Install dependencies:
+```python
+$ pip install -r requirements.txt
+```
+
 ## Usage
 To run the code, follow the steps below:
 
@@ -28,14 +34,6 @@ To run the code, follow the steps below:
 * The tree of `expedia2013` folder should be like
 
 ```
-├── R
-│   ├── config.json
-│   ├── data_import.R
-│   ├── eda.R
-│   ├── evalulation.R
-│   ├── feature_engineering.R
-│   ├── model.R
-│   └── run.R
 ├── README.md
 ├── data
 ├── models
@@ -43,33 +41,35 @@ To run the code, follow the steps below:
 │   ├── book_model.rda
 │   ├── click_model.pickle
 │   └── click_model.rda
-├── python
+├── src
 │   ├── SETTINGS.json
 │   ├── data_import.py
 │   ├── eda.py
 │   ├── predict.py
 │   └── train.py
-└── results
+└── requirements.txt
 ```
 
 * Run `python ./src/python/train.py` to load data, generate features and train models.
 * Run `python ./src/python/predict.py` to generate submission.
 * Models and submissions are located in `./models` and `./results` respectively.
 
-Note:
-
+## Requirements
 * The instruction is tested on an `AWS` `g2.2xlarge` instance running `ubuntu 14.0`.
 * To change the file paths, you need to modify `./python/SETTINGS.json`.
-* While this repository is written in `python`, a short `R` demo is also available. The `R` code runs on the small subset of the data as `R` may have troubles with large-scale data.
 
-### Dependencies
-* The `python` code requires `Python 2.7.0` , `numpy`,
-`scikit-learn`, `pandas`.
-* To run the `R` demo, you should install a few packages:
-`ggplot2`, `dplyr`, `lubridate`, `rjson`, `h2o`.
+Python packages:
+```txt
+matplotlib==2.0.2
+missingno==0.3.7
+numpy==1.13.3
+pandas==0.20.3
+seaborn==0.7.1
+scikit-learn==0.19.0
+```
 
-### Documentation
-See [my blog post](https://jlin-vt.github.io/posts/learning-personalized-hotel-searches-2/) for detailed description.
+## Documentation
+See [my blog post](https://github.com/jlin-vt/expedia2013/wiki) for detailed description.
 
 ## Reference
 - [Combination of Diverse Ranking Models for Personalized Expedia Hotel Searches](https://arxiv.org/pdf/1311.7679v1.pdf)
