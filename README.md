@@ -22,7 +22,7 @@ The final submission was a mean ensemble of 35 best leaderboard submissions. The
 
 ## Installation
 Install dependencies:
-```python
+```
 $ pip install -r requirements.txt
 ```
 
